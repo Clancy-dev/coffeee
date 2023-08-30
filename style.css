@@ -931,6 +931,21 @@ button{
     }
     
 }
+@media (max-width:380px) {
+    .section-6{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1%;
+        height: 77vh;
+    }
+    .cat-1{
+        max-width: 50%;
+    }
+    
+}
 .icons{
     gap: 0.5rem;
 }
