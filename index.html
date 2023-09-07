@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffee</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELPG4FB0QN"></script>
+
+
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -14,6 +18,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Open+Sans:ital,wght@0,700;1,500;1,600;1,700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Open+Sans:ital,wght@0,700;1,500;1,600;1,700&family=Roboto:ital,wght@1,100;1,300&family=Titan+One&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Titan+One&display=swap" rel="stylesheet">
 </head>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-ELPG4FB0QN');
+  </script>
+  
 <body>
     <div class="visible">
         <div class="links-vertical">
@@ -67,6 +79,7 @@
         </div>
 
     </header>
+    <i class='bx bx-x' id="cancel"></i>
     <div class="dreams-2">
         <h1>Keep Your Dreams
             Aroused with a cup
@@ -80,9 +93,49 @@
         <h1>Keep Your Dreams
             Aroused with a cup
             of Coffee.</h1>
-            <button class="order">Order Now</button>
+            <button class="order1-now" id="order">Order Now</button>
         </div>
     </section>
+
+
+<!-- form -->
+<div class="form-section" id="form-cancel">
+    
+    <div class="order-form">
+        <h1>Order Now</h1>
+        
+        <form>
+          <label for="product">Product:</label>
+          <input type="text" id="product" name="product" required>
+          
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" required>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <button type="submit" id="place-order">Place Order</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    
 
     <section class="section-2" id="sec2">
         <div class="upcards">
@@ -106,7 +159,7 @@
         </div>
         <div class="bottom-card1">
         <p>"Discover the essence of true coffee craftsmanship with our meticulously selected Arabica coffee beans. Grown at high at high altitudes,these beans em body a symphony of nuanced flavors, from delicate notes of floral and fruit to the rich undertones of chocolate. Elevate your brew to an extraordinary experience."</p>
-       <button>Get Delivery</button>
+        <a href="#sec1"><button class="get-delivery">Get Delivery</button></a>
         </div>
         </div>
 
@@ -123,7 +176,7 @@
     </div>
     <div class="bottom-card1">
     <p>"Emrace the bold and robust character of our premium Robusta coffee beans.Specially cultivated for a powerful flavor profile and a deep, satisfying aroma ,these beans are your gateway to an intense and invigorating coffee experience. Elevate your mornings with the unparalled strength of Robusta excellence."</p>
-   <button>Get Delivery</button>
+    <a href="#sec1"><button class="get-delivery">Get Delivery</button></a>
     </div>
 </div>  
     </section>
@@ -148,7 +201,7 @@
         <div class="bottom-card1">
             <p>"Each batch of Excelisa coffee beans is sourced from the finest coffee-growing regions across the globe and artfully roasted to perfection, resulting in a cup that is nothing short of extraordinary. 
                 Whether you're a true coffee connoisseur or just beginning to explore the world of specialty coffee, we invite you to join us on this remarkable tasting adventure."</p>
-       <button>Get Delivery</button>
+                <a href="#sec1"><button class="get-delivery">Get Delivery</button></a>
         </div>
         </div>
 
@@ -166,7 +219,7 @@
     <div class="bottom-card1">
         <p>"Discover the unrivaled richness and unique flavors that only Liberica can offer. From its tantalizing aroma to its bold, robust taste, Liberica coffee promises an experience that is truly one-of-a-kind. 
             Join us on a journey of sensory delight as we present the finest Liberica coffee beans."</p>
-   <button>Get Delivery</button>
+   <a href="#sec1"><button class="get-delivery">Get Delivery</button></a>
     </div>
 </div>  
     </section>

@@ -12,6 +12,40 @@ const icon = document.querySelector('#menu');
   });
 
 
+  //FORM
+  const deliveryBtn = document.querySelector('.order1-now');
+
+  const form = document.querySelector('.form-section');
+  let isFormOpen = false;
+
+  deliveryBtn.addEventListener('click', () => {
+    if (isFormOpen) {
+      form.style.display = 'none';
+    } else {
+      form.style.display = 'block';
+    }
+    isFormOpen = !isFormOpen;
+  });
+  
+
+  //cancel
+  const cancelBtn = document.querySelector('#cancel');
+
+  const foorm = document.querySelector('#form-cancel');
+  let isFoormOpen = false;
+
+  cancelBtn.addEventListener('click', () => {
+    if (isFoormOpen) {
+      foorm.style.display = 'none';
+    } else {
+      foorm.style.display = 'block';
+    }
+    isFoormOpen = !isFoormOpen;
+  });
+  
+
+
+
 
 
 
